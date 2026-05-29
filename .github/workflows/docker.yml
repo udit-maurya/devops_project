@@ -23,7 +23,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker Image
-        run: docker build -t priyanshu8948/food-for-all ./server
+        run: docker build -t udit100/food-for-all ./server
 
       - name: Push Docker Image
-        run: docker push priyanshu8948/food-for-all
+        run: docker push udit100/food-for-all
