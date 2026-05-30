@@ -20,7 +20,7 @@ spec:
       containers:
         - name: food-for-all
 
-          image: priyanshu8948/food-for-all
+          image: udit100/food-for-all:latest
 
           ports:
             - containerPort: 5000
