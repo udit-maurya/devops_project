@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   backend:
     build:
@@ -10,3 +8,13 @@ services:
       - "5000:5000"
     env_file:
       - ./server/.env
+
+  frontend:
+    build:
+      context: ./client
+    container_name: food-frontend
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
